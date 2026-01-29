@@ -1,7 +1,7 @@
 package com.example.noteapp.data
 import java.time.LocalDate
 
-class Note (
+data class Note (
     val id : Int,
     var date : LocalDate = LocalDate.now(),
     var title : String,

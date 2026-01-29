@@ -53,14 +53,16 @@ class NoteDetailsViewModel @Inject constructor(
     fun updateNote(title: String, body: String, date: LocalDate, context: Context) {
         viewModelScope.launch {
             try {
-                val note = _noteDetailUiState.value.note
-                if (note != null) {
-                    note.title = title
-                    note.body = body
-                    note.date = date
-                    note.location = userLocationRepository.getUserLocation(context)
-                    noteRepository.upsertNote(note)
-                    _noteDetailUiState.update { it.copy(note = note, isNoteUpdated = true) }
+                val current = _noteDetailUiState.value.note ?: return@launch
+                val updated = current.copy(
+                    title = title,
+                    body = body,
+                    date = date,
+                    location = userLocationRepository.getUserLocation(context)
+                )
+                noteRepository.upsertNote(updated)
+                _noteDetailUiState.update {
+                    it.copy(note = updated, isNoteUpdated = true)
                 }
             } catch (e: NoLocationPermissionException) {
                 _noteDetailUiState.update { it.copy(locationError = LocationError.NO_LOCATION_PERMISSION) }
