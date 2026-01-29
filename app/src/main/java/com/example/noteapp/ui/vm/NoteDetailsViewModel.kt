@@ -57,6 +57,7 @@ class NoteDetailsViewModel @Inject constructor(
                 if (note != null) {
                     note.title = title
                     note.body = body
+                    note.date = date
                     note.location = userLocationRepository.getUserLocation(context)
                     noteRepository.upsertNote(note)
                     _noteDetailUiState.update { it.copy(note = note, isNoteUpdated = true) }
