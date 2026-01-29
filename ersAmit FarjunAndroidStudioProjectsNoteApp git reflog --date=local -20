@@ -1,0 +1,11 @@
+[33mec17024[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{Thu Jan 29 20:54:46 2026}: rebase (finish): returning to refs/heads/main
+[33mec17024[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{Thu Jan 29 20:53:55 2026}: rebase (continue): Initial commit - NoteApp
+[33md760a57[m HEAD@{Thu Jan 29 20:48:16 2026}: rebase (start): checkout d760a5742952e532f5d2b15ef60e0144c89e6ccd
+[33me62e8c8[m HEAD@{Thu Jan 29 20:48:02 2026}: checkout: moving from main to main
+[33me62e8c8[m HEAD@{Thu Jan 29 20:47:50 2026}: rebase (abort): returning to refs/heads/main
+[33m504eb4f[m HEAD@{Thu Jan 29 20:43:15 2026}: rebase (start): checkout 504eb4f03c783b343bddaed3fd6d615d90b24228
+[33me62e8c8[m HEAD@{Thu Jan 29 20:42:46 2026}: rebase (abort): returning to refs/heads/main
+[33me62e8c8[m HEAD@{Thu Jan 29 20:42:46 2026}: rebase (abort): returning to refs/heads/main
+[33me62e8c8[m HEAD@{Thu Jan 29 20:36:58 2026}: commit: Initial commit - NoteApp
+[33m513d6f7[m HEAD@{Thu Jan 29 20:18:13 2026}: Branch: renamed refs/heads/master to refs/heads/main
+[33m513d6f7[m HEAD@{Thu Jan 29 20:17:38 2026}: commit (initial): Initial commit - NoteApp
